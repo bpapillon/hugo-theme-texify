@@ -5,3 +5,13 @@
 
 <!-- google analytics -->
 {{ template "_internal/google_analytics_async.html" . }}
+
+<!-- ensure all external links open in a new window or tab -->
+<script type="text/javascript">
+var links = document.getElementsByTagName('a');
+for (var i = 0; i < links.length; i++) {
+  if (links[i].href.indexOf('{{ .Site.BaseURL }}') == '-1') {
+    links[i].target = '_blank';
+  }
+}
+</script>
