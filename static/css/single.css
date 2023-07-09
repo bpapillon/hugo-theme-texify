@@ -5,3 +5,13 @@
 #main > div + .content {
     padding-top: 1rem;
 }
+
+figure {
+  margin: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 9pt;
+}
